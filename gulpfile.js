@@ -35,16 +35,17 @@ gulp.task('css', () => {
         }))
         .pipe(csso())
         .pipe(concatCSS('dest/css/style.css'))
-        .pipe(gulp.dest('dest/css/'));
+        .pipe(gulp.dest(''));
 });
 
 gulp.task('js', ()=> {
     gulp.src('src/circleMagic.js')
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dest'));
 });
 
 gulp.task('watch', () => {
-    gulp.watch('src/css/*.css', 'css');
-    gulp.watch('src/circleMagic.js', 'js');
+    gulp.watch('src/css/*.css', ['css']);
+    gulp.watch('src/circleMagic.js', ['js']);
 });

@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>circleMagic.js by Andrew</title>
-    <link rel="stylesheet" href="dest/css/">
+    <link rel="stylesheet" href="dest/css/style.css">
+    <link rel="stylesheet" href="dest/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 </head>
 <body>
+<div class="wrapper">
+    <header class="header">
+        <div class="github__block">
+            <a href="https://github.com/FreAK19/circleMagic.js" class="github__link">View on
+                <svg style="width:24px; height:24px" viewBox="0 0 24 24">
+                    <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+                </svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+        <div class="full-center">
+            <h1 class="header__heading">circleMagic.js</h1>
+            <h3 class="subscribe">circleMagic.js is a lightweight library for jQuery</h3>
+        </div>
+        <div class="arrow__btn">
+            <a href="#main" class="btn">
+                <img src="dest/img/download.svg" alt="" width="50" height="50">
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="copy" id="main">
+                <h1>What is it?</h1>
+                <p>circleMagic.js is a jQuery plugin that create simple and ease you to create a perfect animated header side effect. It Works by creating canvas element in section that is selected, and create random bulls, random sizes, and random color.
+                </p>
+                <p>circleMagic.JS is not hardCPU or any of those Ram Revourer. It is for creating perfect aimation.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="example">
 
+            </div>
+        </div>
+    </section>
+</div><!-- end of container -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="dest/main.js"></script>
+<script src="dest/circleMagic.min.js"></script>
+<script>
+        $('.header').circleMagic({
+            radius: 25,
+            densety: .3,
+            color: 'rgba(255,255,255, .3)',
+            clearOffset: .3
+        });
+</script>
 </body>
 </html>
