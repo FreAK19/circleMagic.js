@@ -12,7 +12,7 @@ Below are some ways to use circleMagic.
 
 
 ```sh
-bower install circleMagic --save
+    bower install circleMagic --save
 ```
 or directly download
 ```
