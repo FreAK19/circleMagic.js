@@ -1,3 +1,5 @@
+"use strict";
+
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const imageResize = require('gulp-image-resize');
@@ -33,6 +35,16 @@ gulp.task('css', () => {
         }))
         .pipe(csso())
         .pipe(concatCSS('dest/css/style.css'))
-        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dest/css/'));
+});
+
+gulp.task('js', ()=> {
+    gulp.src('src/circleMagic.js')
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+});
+
+gulp.task('watch', () => {
+    gulp.watch('src/css/*.css', 'css');
+    gulp.watch('src/circleMagic.js', 'js');
 });
