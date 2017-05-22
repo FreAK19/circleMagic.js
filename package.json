@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/FreAK19/circleMagic.js/issues"
   },
-  "homepage": "https://github.com/FreAK19/circleMagic.js#readme"
+  "homepage": "https://github.com/FreAK19/circleMagic.js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0"
+  }
 }
