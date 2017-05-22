@@ -18,7 +18,9 @@
     "bower_components",
     "test",
     "tests",
-    "package.json"
+    "package.json",
+    "gulpfile.js",
+    ".gitignore"
   ],
   "dependencies": {
     "jquery": "^3.2.1"
