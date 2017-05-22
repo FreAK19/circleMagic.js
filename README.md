@@ -19,7 +19,8 @@ or directly download
     git clone https://github.com/FreAK19/circleMagic.js
 ```
 
-##Using
+Using
+=====
 
 ```js
     $('.header').circleMagic({
@@ -32,7 +33,8 @@ or directly download
             });
 ```
 
-##Options
+Options
+========
 
 | Plugin | Description |
 | ------ | ------ |
@@ -42,7 +44,8 @@ or directly download
 | color | Color of circle.Can be used #fff, rgba() or a 'random' keyword.] |
 | clearOffset | Define how circles disappears |
 
-###License
+License
+======
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
