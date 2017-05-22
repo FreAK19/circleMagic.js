@@ -1,0 +1,26 @@
+{
+  "name": "circlemagic",
+  "description": "bubble effect on javascript",
+  "main": "circleMagic.min.js",
+  "authors": [
+    "Andrew Kiri4encko"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "circlemagic",
+    "bubble-effect"
+  ],
+  "homepage": "https://github.com/FreAK19/circleMagic.js",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
