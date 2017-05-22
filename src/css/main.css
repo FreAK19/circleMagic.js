@@ -9,10 +9,13 @@ body {
     margin: 0 auto;
 }
 .copy {
-    background: #eef1f3;
-    padding: 26px;
-    margin-bottom: 100px;
-}
+     background: #eef1f3;
+     padding: 26px;
+     margin-bottom: 80px;
+ }
 .copy h1 {
     font-size: 1.7em;
+}
+.no-margin {
+    margin-bottom: 0;
 }
