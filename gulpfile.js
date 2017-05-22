@@ -1,18 +1,38 @@
-/**
- * Created by Andrew on 22.05.2017.
- */
-
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
+const imageResize = require('gulp-image-resize');
+const autoprefixer = require('gulp-autoprefixer');
+const concatCSS = require('gulp-concat-css');
+const rename = require('gulp-rename');
+const jsmin = require('gulp-jsmin');
+const csso = require('gulp-csso');
 
 
-gulp.task('image', function () {
-    return gulp.src(['src/img/*.png', 'src/img/*.jpg'])
+let image_prop = {
+    width : 1600,
+    height : 700,
+    crop : true,
+    upscale : false
+};
+
+gulp.task('image', () => {
+    gulp.src(['src/img/*.png', 'src/img/*.jpg'])
         .pipe(imagemin({
-            optimizationLevel: 10
+            optimizationLevel: 10,
         }))
-        .pipe(gulp.dest('dest/img/'));
+        .pipe(imageResize(image_prop))
+        .pipe(gulp.dest('dest/img'));
 });
 
 
-
+gulp.task('css', () => {
+    gulp.src('src/css/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
+        .pipe(csso())
+        .pipe(concatCSS('dest/css/style.css'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dest/css/'));
+});
