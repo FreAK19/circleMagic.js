@@ -27,6 +27,10 @@
 .key {
   color: #8666a3;
 }
+
+.comment {
+  color: #96a4be;
+}
 .header {
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
