@@ -15,17 +15,37 @@ Below are some ways to use circleMagic.
     bower install circleMagic --save
 ```
 or directly download
-```
+```sh
     git clone https://github.com/FreAK19/circleMagic.js
 ```
-For jQuery to work in Node, a window with a document is required. Since no such window exists natively in Node, one can be mocked by tools such as [jsdom](https://github.com/tmpvar/jsdom). This can be useful for testing purposes.
+
+##Using
 
 ```js
-require("jsdom").env("", function(err, window) {
-	if (err) {
-		console.error(err);
-		return;
-	}
-
-});
+    $('.header').circleMagic({
+                elem: '.header',
+                radius: 35,
+                densety: .3,
+                color: 'rgba(255,255,255, .4)',
+                //color: 'random',
+                clearOffset: .3
+            });
 ```
+
+##Options
+
+| Plugin | Description |
+| ------ | ------ |
+| elem | Select element that will be used for canvas |
+| radius | Defines radius of the circles |
+| densety | Specify how much circles will be on screen|
+| color | Color of circle.Can be used #fff, rgba() or a 'random' keyword.] |
+| clearOffset | Define how circles disappears |
+
+###License
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software...
