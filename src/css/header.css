@@ -1,0 +1,77 @@
+.header {
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 100rem;
+    overflow-x: hidden;
+    margin-bottom: 70px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__heading {
+    text-align: center;
+    text-shadow: 2px 1px 6px black;
+    font-size: 4em;
+    font-weight: normal;
+    margin: 20px 0 10px 0;
+}
+.full-center {
+    padding: 25px 30px;
+    position: absolute;
+    color: #fff;
+    background: rgba(84, 76, 76, 0.4);
+}
+.subscribe {
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.github__block {
+    font-weight: bold;
+    position: absolute;
+    top: 35px;
+    right: 60px;
+}
+.github__link {
+    text-decoration: none;
+    color: rgb(233,30,99);
+    line-height: 1.3;
+    transition: color .4s;
+
+}
+.github__link:hover {
+    color: #a9a9a9;
+}
+.github__block a svg {
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.github__link  svg path{
+    fill: #E91E63;
+    transition: fill .4s;
+}
+.github__link:hover svg path {
+    fill: #a9a9a9;
+}
+.github__link {
+    margin-left: 10px;
+}
+/* Arrow button  */
+@keyframes span {
+    from {
+        bottom: 90px;
+        transform: rotateY(0deg);
+    }
+    to {
+        bottom: 100px;
+        transform: rotateY(50deg);
+    }
+}
+
+.arrow__btn {
+    position: absolute;
+    bottom: 90px;
+    animation: span .7s ease-out infinite alternate;
+}
