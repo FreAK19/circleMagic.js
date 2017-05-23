@@ -1,5 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
-# IntelliJ project files
+# WebStorm project files
 .idea
 /node_modules/
 /bower_components/
