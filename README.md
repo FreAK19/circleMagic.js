@@ -2,7 +2,7 @@
 
 > circleMagic is a fast, easy, and modern jQuery library.
 
-For information on how to get started and how to use circleMagic.js, please see [circleMagic website](https://github.com/FreAK19/circleMagic.js/).
+For information on how to get started and how to use circleMagic.js, please see [circleMagic website](https://freak19.github.io/circlemagic.github.io/.).
 
 
 ## Including circleMagic
