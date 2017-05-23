@@ -2,7 +2,7 @@
   "name": "circlemagic",
   "description": "bubble effect on javascript",
   "main": "circleMagic.min.js",
-  "version": 0.1.0,
+  "version": "0.1.0",
   "authors": [
     "Andrew Kiri4encko"
   ],
