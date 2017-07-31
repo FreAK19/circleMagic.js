@@ -1,3 +1,26 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.copy {
+  background: #eef1f3;
+  padding: 26px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+}
+
+.copy h1 {
+  font-size: 1.7em;
+}
+
 .example {
   background: #283339;
   padding: 10px;
@@ -31,18 +54,17 @@
 .comment {
   color: #96a4be;
 }
+
 .header {
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
-  height: 100rem;
-  overflow-x: hidden;
+  height: 100vh;
   margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -59,8 +81,12 @@
 .full-center {
   padding: 25px 30px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
-  background: rgba(84,76,76,.4);
+  background: rgba(84, 76, 76, .4);
+  border-radius: 4px;
 }
 
 .subscribe {
@@ -135,32 +161,15 @@
 
 .arrow__btn {
   position: absolute;
-  bottom: 90px;
+  transform: translate(-50%, -50%);
+  top: 82%;
+  left: 50%;
   -webkit-animation: span .7s ease-out infinite alternate;
   animation: span .7s ease-out infinite alternate;
 }
-body {
-  font-family: 'Roboto',sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
+.arrow__btn:hover {
+  cursor: pointer;;
 }
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.copy {
-  background: #eef1f3;
-  padding: 26px;
-  margin-bottom: 80px;
-}
-
-.copy h1 {
-  font-size: 1.7em;
-}
-
 .no-margin {
   margin-bottom: 0;
 }
@@ -177,36 +186,13 @@ body {
   background-color: #fff;
 }
 
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
+.table > tbody > tr > td {
   padding: 25px;
   line-height: 1.42857143;
   border-top: 1px solid #ddd;
 }
 
-.table>thead>tr>th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
-}
-
-.table>caption+thead>tr:first-child>td,
-.table>caption+thead>tr:first-child>th,
-.table>colgroup+thead>tr:first-child>td,
-.table>colgroup+thead>tr:first-child>th,
-.table>thead:first-child>tr:first-child>td,
-.table>thead:first-child>tr:first-child>th {
-  border-top: 0;
-}
-
-.table>tbody+tbody {
-  border-top: 2px solid #ddd;
-}
-
-.table-striped>tbody>tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 
@@ -226,4 +212,8 @@ body {
   padding: 10px;
   background: #f9f9f9;
   text-align: center;
+}
+
+.footer p {
+  font-weight: bold;
 }
