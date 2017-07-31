@@ -2,7 +2,7 @@
 
 > circleMagic is a fast, easy, and modern jQuery library.
 
-![circleMagic pic](dist/img/readme.gif)
+![circleMagic pic](dest/img/readme.gif)
 
 For information , go to the [circleMagic website](https://github.com/FreAK19/circleMagic.js/).
 
