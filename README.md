@@ -2,12 +2,15 @@
 
 > circleMagic is a fast, easy, and modern jQuery library.
 
-For information on how to get started and how to use circleMagic.js, please see [circleMagic website](https://freak19.github.io/circlemagic.github.io/.).
+![circleMagic pic](dist/img/readme.gif)
+
+For information , go to the [circleMagic website](https://github.com/FreAK19/circleMagic.js/).
 
 
-## Including circleMagic
+# Install circleMagic.js
+----------------
 
-Below are some ways to use circleMagic.
+You can install from bower .
 
 
 
@@ -18,37 +21,34 @@ or directly download
 ```sh
     git clone https://github.com/FreAK19/circleMagic.js
 ```
-
-Using
+# Using
 ------
 
 ```js
     $('.header').circleMagic({
-                elem: '.header',
                 radius: 35,
-                densety: .3,
+                density: .3,
                 color: 'rgba(255,255,255, .4)',
                 //color: 'random',
                 clearOffset: .3
             });
 ```
 
-Options
+# Options
 ------
 
 | Plugin | Description |
 | ------ | ------ |
-| elem | Select element that will be used for canvas |
+| | |
 | radius | Defines radius of the circles |
-| densety | Specify how much circles will be on screen|
-| color | Color of circle.Can be used #fff, rgba() or a 'random' keyword.] |
-| clearOffset | Define how circles disappears |
+| density | Specify how much circles will be on the screen. |
+| color | Color of circles. Can be used #hex, rgba(), hsl() or a 'random' keyword. |
+| clearOffset | Disappearing of the circles. |
 
-License
+# License
 -------
 
 Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
+a copy of this software and associated documentation files, to deal in the Software without restriction, including
 without limitation the rights to use, copy, modify, merge, publish,
 distribute, sublicense, and/or sell copies of the Software...
