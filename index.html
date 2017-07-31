@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>circleMagic.js by Andrew</title>
-    <link rel="stylesheet" href="dest/css/style.css">
-    <link rel="stylesheet" href="dest/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
 <div class="wrapper">
@@ -13,7 +13,8 @@
         <div class="github__block">
             <a href="https://github.com/FreAK19/circleMagic.js" class="github__link">View on
                 <svg style="width:24px; height:24px" viewBox="0 0 24 24">
-                    <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+                    <path fill="#000000"
+                          d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
                 </svg>
                 <span>GitHub</span>
             </a>
@@ -23,18 +24,18 @@
             <h3 class="subscribe">circleMagic.js is a lightweight library for jQuery</h3>
         </div>
         <div class="arrow__btn">
-            <a href="#main" class="btn">
-                <img src="dest/img/download.svg" alt="" width="50" height="50">
-            </a>
+            <img src="dist/img/download.svg" alt="" width="50" height="50" class="btn">
         </div>
     </header>
     <section>
         <div class="container">
-            <div class="copy" id="main">
+            <div class="copy">
                 <h1>What is it?</h1>
-                <p>circleMagic.js is a jQuery plugin that create simple and ease you to create a perfect animated header effect. It Works by creating canvas element in section that is selected, and create random bulls, random sizes, and random color.
+                <p>circleMagic.js is a jQuery plugin that create simple and ease you to create a perfect animated header
+                    effect. It Works by creating canvas element in section that is selected, and create random bulls,
+                    random sizes, and random color. Compatible with modern browser and even with IE9.
                 </p>
-                <p>circleMagic.JS is not hardCPU or any of those Ram Revourer. It is for creating perfect animation.</p>
+                <p>circleMagic.JS is not hardCPU or any of RAM Revourer. It is for creating perfect animation.</p>
             </div>
         </div>
     </section>
@@ -45,60 +46,69 @@
             </div>
             <div class="example">
                 <pre class="code">
-                    <span class="jq">$(</span><span class="brace">'</span><span class="selector">.header</span><span class="brace">'</span><span class="jq">)</span><span class="method">.circleMagic</span><span class="jq">({</span>
-                    <span class="key">elem:</span> <span class="selector">'.header'</span><span class="jq">,</span>
-                    <span class="key">radius:</span> <span class="selector">35</span><span class="jq">,</span>
-                    <span class="key">densety:</span> <span class="selector">.3</span><span class="jq">,</span>
-                    <span class="key">color:</span> <span class="selector">'rgba(255,255,255, .4)'</span><span class="jq">,</span>
-                    <span class="comment"><span class="key comment">//color:</span> <span class="selector comment">'random</span><span class="jq">,</span></span>
-                    <span class="key">clearOffset:</span> <span class="selector">.3</span>
-                    <span class="jq">});</span>
+                    <span class="jq">$(</span><span class="brace">'</span><span class="selector">.header</span><span
+                        class="brace">'</span><span class="jq">)</span><span class="method">.circleMagic</span><span
+                        class="jq">({</span>
+                    <span class="key">      radius:</span> <span class="selector">35</span><span class="jq">,</span>
+                    <span class="key">      density:</span> <span class="selector">0.3</span><span class="jq">,</span>
+                    <span class="key">      color:</span> <span class="selector">'rgba(255,255,255, .4)'</span><span
+                        class="jq">,</span>
+                    <span class="comment"><span class="key comment">      //color:</span> <span
+                            class="selector comment">'random'</span><span class="jq">,</span></span>
+                    <span class="key">      clearOffset:</span> <span class="selector">0.3</span>
+                    <span class="jq">   });</span>
                 </pre>
             </div>
             <div class="copy no-margin">
                 <h1>Options</h1>
             </div>
-                <table class="table table-striped">
-                    <tr class="row">
-                        <td class="data">elem</td>
-                        <td class="data">Select element that will be used for canvas</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="data">radius</td>
-                        <td class="data">Defines radius of the circles</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="data">densety</td>
-                        <td class="data">Specify how much circles will be on screen</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="data">color</td>
-                        <td class="data">Color of circle.Can be used <span class="color">#fff</span>, <span class="color">rgba() </span>or a <span class="color">'random' </span>    keyword.</td>
-                    </tr>
-                    <tr class="row">
-                        <td class="data">clearOffset</td>
-                        <td class="data">Define how circles disappears</td>
-                    </tr>
-                </table>
+            <table class="table table-striped">
+                <tr class="row">
+                    <td class="data">radius</td>
+                    <td class="data">Defines radius of the circles</td>
+                </tr>
+                <tr class="row">
+                    <td class="data">density</td>
+                    <td class="data">Specify how much circles will be on canvas element</td>
+                </tr>
+                <tr class="row">
+                    <td class="data">color</td>
+                    <td class="data">Color of circle. Can be used <span class="color">#hex</span>, <span class="color">rgba(), </span>
+                        <span class="color">hsl() </span> or a <span class="color">'random' </span> keyword.
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="data">clearOffset</td>
+                    <td class="data">Define how circles disappears</td>
+                </tr>
+            </table>
         </div>
     </section>
     <footer class="footer">
-        <p>made with &#10084; by Andrew</p>
+        <p>made with &#10084; by <a href="https://github.com" class="github__link">Andrew</a></p>
     </footer>
 </div><!-- end of container -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="dest/main.js"></script>
-<script src="dest/circleMagic.min.js"></script>
+<!-- Scripts loading -->
+
+<script src="dist/jquery-1.7.1.min.js"></script>
+<script src="src/jquery.circleMagic.js"></script>
 <script>
-        $('.header').circleMagic({
-            elem: '.header',
-            radius: 35,
-            densety: .3,
-            color: 'rgba(255,255,255, .4)',
-            //color: 'random',
-            clearOffset: .3
-        });
+  window.onload = function() {
+    $(".btn").on("click", function (e) {
+      e.preventDefault();
+      var top = window.innerHeight;
+      console.log(top);
+      $('body,html').animate({scrollTop: top + 20}, 1200);
+    });
+
+    $('.header').circleMagic({
+      radius: 35,
+      density: .1,
+      color: 'rgba(255,255,255, .4)',
+      clearOffset: .9
+    });
+  }
 </script>
 </body>
 </html>
